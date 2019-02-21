@@ -1,0 +1,374 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*------------------------------------*\
+    # Simple Typography Settings
+\*------------------------------------*/
+/*------------------------------------*\
+    # Type
+\*------------------------------------*/
+*, html, body {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 36px;
+  color: #000000;
+  line-height: 1.25em;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 5rem;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+h4 {
+  font-size: 2.94118rem;
+  margin-bottom: 14.11765px;
+}
+
+h5 {
+  font-size: 2.77778rem;
+  margin-bottom: 13.33333px;
+}
+
+h6 {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 1.25rem;
+  line-height: 1.5em;
+  color: black;
+  font-family: 'Lato', sans-serif;
+}
+
+p:last-of-type {
+  margin-bottom: 0;
+}
+
+a {
+  color: #459bd9;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  font-family: 'Lato', sans-serif;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: #1f6699;
+}
+
+form {
+  font-size: 1.25rem;
+  line-height: 1.5em;
+  color: black;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+footer {
+  padding: 1rem;
+}
+
+ul,
+ol {
+  margin: 20px 0 0 20px;
+}
+
+ul li,
+ol li {
+  text-indent: -20px;
+  margin-top: 10px;
+  line-height: 1.5em;
+  color: black;
+  font-size: 1.25rem;
+}
+
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+  margin-top: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul ul li {
+  list-style: none;
+}
+
+ol li {
+  list-style: decimal;
+}
+
+hr {
+  height: 1px;
+  margin: 30px 0;
+  border: none;
+  background-color: #DADADA;
+}
+
+blockquote {
+  margin: 30px 0;
+  font-size: 1.4375rem;
+  line-height: 1.5em;
+  color: #505050;
+  text-align: center;
+  font-style: italic;
+}
+
+table {
+  width: 100%;
+  margin: 30px 0;
+  border-collapse: collapse;
+}
+
+table, td, th {
+  border: 1px solid #DADADA;
+  text-align: left;
+}
+
+th {
+  font-weight: 800;
+}
+
+th, td {
+  padding: 15px;
+}
+
+figure {
+  margin: 30px 0;
+}
+
+figure img {
+  margin: 0;
+}
+
+figcaption {
+  margin-top: 10px;
+  color: #1a1a1a;
+  font-size: 16px;
+}
+
+pre {
+  display: block;
+  margin: 0 0 40px 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #DADADA;
+  overflow: auto;
+  border-radius: 3px;
+}
+
+pre code {
+  position: static;
+  padding: 0;
+  border: none;
+  line-height: 1.5em;
+}
+
+code {
+  position: relative;
+  top: -0.2em;
+  padding: 3px;
+  font-family: Courier New, Courier, monospace;
+  font-size: 1.04167rem;
+  color: #282828;
+  line-height: 1em;
+  pointer-events: none;
+  border: 1px solid #DADADA;
+  border-radius: 3px;
+}
+
+em,
+i,
+.italic {
+  font-style: italic;
+}
+
+strong,
+b,
+.bold {
+  font-weight: 800;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 30px 0;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-align: right;
+  font-family: 'Lato', sans-serif;
+}
+
+nav ul {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 100%;
+}
+
+li {
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background-color: #d0cfc5;
+}
+
+svg {
+  z-index: -1;
+  position: absolute;
+  right: 0;
+}
+
+.pillars {
+  width: 363px;
+  height: 531px;
+}
+
+article {
+  padding: 1rem;
+}
+
+h2 {
+  text-align: center;
+}
+
+.img {
+  background-color: grey;
+  height: 20rem;
+  width: 12.5rem;
+}
+
+article header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.tech {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.spanOne {
+  background-color: green;
+}
+
+.spanTwo {
+  background-color: blue;
+}
+
+.spanThree {
+  background-color: #fcde00;
+}
+/*# sourceMappingURL=style.css.map */
